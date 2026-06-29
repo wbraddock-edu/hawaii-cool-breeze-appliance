@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin | Cool Breeze Appliance Repair</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<a href="index.html" class="logo-link"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" aria-label="Cool Breeze Appliance Logo" xmlns="http://www.w3.org/2000/svg">
+<rect width="38" height="38" rx="10" fill="#1F618D"/>
+<rect x="7" y="11" width="24" height="16" rx="3" fill="none" stroke="white" stroke-width="2"/>
+<rect x="10" y="14" width="8" height="10" rx="1.5" fill="#AED6F1"/>
+<line x1="22" y1="15" x2="28" y2="15" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="22" y1="18" x2="27" y2="18" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="22" y1="21" x2="25" y2="21" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="15" y1="27" x2="23" y2="27" stroke="#AED6F1" stroke-width="2" stroke-linecap="round"/>
+</svg><span class="logo-text">Cool Breeze Appliance</span></a>
+<div class="header-actions"><button class="dark-toggle" id="darkToggle">🌙</button></div>
+</header>
+<div id="adminLogin" style="padding:2rem 1rem;">
+<div class="admin-login">
+<div style="text-align:center;margin-bottom:1.5rem;"><div style="font-size:2rem;">&#x1F512;</div><h2 style="font-family:'Poppins',sans-serif;font-weight:800;">Admin Login</h2><p style="color:var(--text-muted);">Cool Breeze Dashboard</p></div>
+<form id="adminLoginForm"><div class="form-group"><label>Password</label><input type="password" id="adminPassword" placeholder="Enter password"></div>
+<p id="loginError" style="color:#c0392b;font-size:.85rem;margin-bottom:.75rem;"></p>
+<button type="submit" class="cta-btn" style="width:100%;">Login</button></form>
+</div>
+</div>
+<div id="adminPanel" style="display:none;" class="admin-layout">
+<div class="admin-sidebar">
+<div style="padding:1rem 1.5rem 1.5rem;border-bottom:1px solid rgba(255,255,255,.15);margin-bottom:.5rem;"><div style="font-weight:800;font-family:'Poppins',sans-serif;">Admin Panel</div></div>
+<a href="#" class="active">&#x1F4CA; Dashboard</a>
+<a href="#">&#x1F527; Repairs</a>
+<a href="#">&#x1F4AC; Messages</a>
+<a href="index.html">&#x2190; Back to Site</a>
+</div>
+<div class="admin-content">
+<div class="admin-header"><h1>Dashboard</h1><p style="color:var(--text-muted);">Welcome, Derek. Here is today's overview.</p></div>
+<div class="stat-cards">
+<div class="stat-card"><div class="stat-num">9</div><div class="stat-label">Repairs Today</div></div>
+<div class="stat-card"><div class="stat-num">4</div><div class="stat-label">New Bookings</div></div>
+<div class="stat-card"><div class="stat-num">$2,840</div><div class="stat-label">Revenue Today</div></div>
+<div class="stat-card"><div class="stat-num">97%</div><div class="stat-label">Same-Day Rate</div></div>
+</div>
+<h2 style="font-family:'Poppins',sans-serif;font-weight:700;margin-bottom:1rem;">Today's Service Schedule</h2>
+<div style="overflow-x:auto;margin-bottom:2rem;">
+<table>
+<thead><tr><th>Customer</th><th>Appliance</th><th>Address</th><th>Time</th><th>Technician</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>Kalani Wailua</td><td>Refrigerator (LG)</td><td>Hilo</td><td>8:00 AM</td><td>Derek</td><td><span class="badge badge-green">Complete</span></td></tr>
+<tr><td>Mei Lopez</td><td>Dryer (Maytag)</td><td>Keaau</td><td>10:00 AM</td><td>Amy</td><td><span class="badge badge-green">Complete</span></td></tr>
+<tr><td>Ryan Morrison</td><td>AC Unit (LG Split)</td><td>Hilo</td><td>12:00 PM</td><td>Keoni</td><td><span class="badge badge-yellow">In Progress</span></td></tr>
+<tr><td>Sandra Pua</td><td>Dishwasher (Bosch)</td><td>Pahoa</td><td>2:00 PM</td><td>Jared</td><td><span class="badge badge-yellow">Scheduled</span></td></tr>
+<tr><td>Tommy Akana</td><td>Washer (Samsung)</td><td>Hilo</td><td>3:30 PM</td><td>Derek</td><td><span class="badge badge-yellow">Scheduled</span></td></tr>
+</tbody>
+</table>
+</div>
+<h2 style="font-family:'Poppins',sans-serif;font-weight:700;margin-bottom:1rem;">Recent Messages</h2>
+<div style="overflow-x:auto;">
+<table>
+<thead><tr><th>From</th><th>Subject</th><th>Date</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>Grace Nakano</td><td>Washer making noise again after repair</td><td>Jun 30</td><td><span class="badge badge-red">Unread</span></td></tr>
+<tr><td>Mike Duarte</td><td>Reschedule Thursday appointment</td><td>Jun 29</td><td><span class="badge badge-red">Unread</span></td></tr>
+<tr><td>Lisa Chen</td><td>Invoice question</td><td>Jun 28</td><td><span class="badge badge-green">Read</span></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<script src="js/main.js"></script>
+
+  <!-- Powered by Design Holistically -->
+  <footer style="background:#111;color:#aaa;text-align:center;padding:1.5rem;font-size:0.85rem;font-family:sans-serif;">
+    <p>&copy; 2024. Powered by <a href="https://designholistically.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">Design Holistically</a>. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
