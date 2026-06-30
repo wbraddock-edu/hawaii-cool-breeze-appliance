@@ -54,7 +54,7 @@ nav a:hover,nav a.active{background:var(--primary);color:#fff;}
 .mobile-menu a{display:block;padding:.85rem 1rem;font-weight:600;color:var(--text);text-decoration:none;border-radius:8px;border:1px solid var(--border);min-height:44px;}
 .mobile-menu a:hover{background:var(--primary);color:#fff;border-color:var(--primary);}
 
-.hero{background:linear-gradient(135deg,#0a1f30 0%,#1F618D 60%,#2471A3 100%);color:#fff;padding:5rem 1.5rem 4rem;text-align:center;position:relative;overflow:hidden;}
+.hero{ min-height: 90vh; display: flex; align-items: center;background: transparent;color:#fff;padding:5rem 1.5rem 4rem;text-align:center;position:relative;overflow:hidden;}
 .hero h1{font-family:'Poppins',sans-serif;font-size:clamp(2rem,5.5vw,3.3rem);font-weight:800;margin-bottom:1rem;line-height:1.15;}
 .hero p{font-size:clamp(1rem,2.5vw,1.2rem);opacity:.9;max-width:600px;margin:0 auto 2rem;}
 .hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
